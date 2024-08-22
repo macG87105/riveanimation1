@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rive Animation</title>
+  <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+</head>
+<body>
+  <canvas id="riveCanvas" width="800" height="600"></canvas>
+  <script>
+    const canvas = document.getElementById('riveCanvas');
+    const rive = new Rive({
+      src: 'https://raw.githubusercontent.com/macG87105/rive-animation/main/head_bici_2.riv',
+      canvas: canvas,
+      autoplay: true
+    });
+  </script>
+</body>
+</html>
